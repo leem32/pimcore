@@ -38,6 +38,7 @@ LoadFile "C:/xampp/php/libpq.dll"
 Add these lines to enable FastCGI.
 
 ```apacheconfig
+LoadModule fcgid_module modules/mod_fcgid.so
 FcgidInitialEnv PHPRC "C:/xampp/php"
 AddHandler fcgid-script .php
 FcgidWrapper "C:/xampp/php/php-cgi.exe" .php
